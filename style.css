@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+}
+header {
+    background-image: url(https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg);
+    background-size: cover;
+    height: auto;
+    background-repeat: no-repeat;
+}
+.container {
+  
+}
+.container-head {
+    background: rgba(27, 27, 27, 0);
+    color: white;
+    font-family: sans-serif; 
+    margin: 0 1rem;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+nav {
+    display: flex;
+    margin: 0 1rem;
+    
+}
+li {
+    list-style: none;
+    margin: 0 1rem;
+    font-size: 1.3rem
+}
+nav > button {
+    color: white;
+    background-color: goldenrod;
+    height: 30px;
+    width: 65px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.title {
+    color: goldenrod;
+    margin: 0 1rem;
+    font-weight: 400;
+    font-family: cursive;
+}
+.content {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 69vh;
+    color: white;
+    font-family: sans-serif; 
+}
+.content > p {
+    font-size: 2.5em;
+    margin: 0;
+}
+.content > h1 {
+    font-size: 4em;
+    margin: 15px 0;
+    text-align: center;   
+}
+.content > button {
+    margin-top: 25px;
+    width: 150px;
+    height: 75px;
+    border-radius: 7px;
+    color: white;
+    font-size: 1rem;
+    background-color: goldenrod
+}
+i {
+    background-color: goldenrod;
+    color: white;
+}
+.dropdown {
+    background:rgb(27, 27, 27);
+    transition: .4s;
+    height: 220px;
+  }
+  .dropdown > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: sans-serif;
+    color: #fff;
+  }
+  .dropdown li {
+    padding: .6rem 0;
+  }
+  .hide {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+  }
+@media (min-width: 1000px) {
+    nav > button{
+        display: none;
+    }
+    .dropdown {
+        display: none;
+    }
+}
+@media (max-width: 1200px) {
+    .container-head {
+        max-width: 1000px;
+    }
+}
+@media (max-width: 1000px) {
+    .container-head {
+        max-width: 1200px;
+        background: rgb(27, 27, 27);
+        margin: 0;
+    }
+    .title {
+        font-size: .75rem;
+    }
+    nav > li {
+        display: none;
+      }
+      i {
+        display: inline-block !important;
+      }
+}
